@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias Deportivas </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .card {
+            background: #f4f4f4;
+            padding: 15px;
+            border-radius: 8px;
+            width: 23%;
+            text-align: center;
+        }
+        .card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .card h3 {
+            margin: 10px 0;
+        }
+        .card a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 15px;
+            background: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        @media (max-width: 768px) {
+            .card {
+                width: 100%;
+            }
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Noticias Deportivas</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Proyectos</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="container">
+        <div class="card">
+            <img src="https://www.semana.com/resizer/v2/NTXKLVBQTJF7PPPSUY2MDFCKTY.jpg?auth=42ba3c5b1256addf592e2b96c593048227dd5e1d9df6bc75037af9970a932a56&smart=true&quality=75&width=1280&height=720" alt="Imagen 1">
+            <h3>Sorpresa en sevilla </h3>
+            <p>Real Madrid fue sorprendido este sábado, 1 de marzo, por el Betis del futbolista colombiano Juan Camilo Hernández .</p>
+            <a href="https://www.semana.com/deportes/articulo/real-madrid-sacude-la-tabla-de-posiciones-mazazo-del-betis-en-laliga-beneficia-a-barcelona/202508/">Detalles</a>
+        </div>
+        <div class="card">
+            <img src="https://phantom-marca.uecdn.es/bc7c5c29d7984de3c6c1b044cc398a48/resize/1320/f/webp/assets/multimedia/imagenes/2025/02/28/17407785083924.jpg" alt="Imagen 2">
+            <h3>¿se queda?</h3>
+            <p>el revuelo y escándalo que se produjo a nivel local e internacional, llevó a que se hablara de la salida de James Rodríguez.</p>
+            <a href="https://www.marca.com/co/2025/02/28/67c22c8a22601d05418b4593.html">Detalles</a>
+        </div>
+        <div class="card">
+            <img src="https://e00-xlk-ue-marca.uecdn.es/files/article_1320_widen_webp/uploads/2025/03/01/67c3660f95953.webp" alt="Imagen 3">
+            <h3>El City remonta </h3>
+            <p>Tras el encuentro, Guardiola es optimista con su actuación en la FA Cup.</p>
+            <a href="https://www.marca.com/futbol/futbol-internacional/2025/03/01/city-remonta-pasa-ronda-sufriendo-antepenultimo-segunda-verdugo-liverpool.html">Detalles</a>
+        </div>
+        <div class="card">
+            <img src="https://phantom-marca.uecdn.es/6642392f7e7cd9103653e4f9d05c011e/resize/1320/f/webp/assets/multimedia/imagenes/2025/03/01/17408560156709.jpg" alt="Imagen 4">
+            <h3>El Nápoles rescata</h3>
+            <p>El primer tiempo estuvo muy trabado, con más juego duro que fútbol.</p>
+            <a href="https://www.marca.com/futbol/liga-italiana/cronica/2025/03/01/67c34ce2e2704e66bf8b456a.html">Detalles</a>
+        </div>
+        <div class="card">
+            <img src="https://phantom-marca.uecdn.es/9088a00cb85f1c80c343b504bee9e4d4/resize/1310/f/webp/assets/multimedia/imagenes/2025/02/22/17402633127172.jpg" alt="Imagen 5">
+            <h3>Mentalidad Barça</h3>
+            <p>Tenemos que estar enfocados, el calendario no es una excusa.</p>
+            <a href="https://www.marca.com/futbol/barcelona/2025/03/01/hansi-flick-enfocados-calendario-excusa.html">Detalles</a>
+        </div>
+        <div class="card">
+            <img src="https://e00-xlk-ue-marca.uecdn.es/files/article_1320_widen_webp/uploads/2025/02/28/67c208e969725.webp" alt="Imagen 6">
+            <h3>Vuelve a Bazil </h3>
+            <p>El Palmeiras pagó 25,5 millones y otros cinco en bonus.</p>
+            <a href="https://www.marca.com/futbol/barcelona/2025/03/01/asi-son-variables-traspaso-vitor-roque.html">Detalles</a>
+        </div>
+        <div class="card">
+            <img src="https://phantom-marca.uecdn.es/12544b3c7ab7bf703463122e5a3b5b78/resize/416/f/webp/assets/multimedia/imagenes/2025/02/28/17407428221103.png" alt="Imagen 7">
+            <h3>Balon de oro 2025</h3>
+            <p>los 10 candidatos según el Power Ranking de MARCA.</p>
+            <a href="https://www.marca.com/futbol/2025/02/28/power-ranking-balon-oro-2025-asi-top-10-favoritos.html">Detalles</a>
+        </div>
+        <div class="card">
+            <img src="https://e00-xlk-ue-marca.uecdn.es/files/article_1320_widen_webp/uploads/2025/02/27/67c080b30d95e.webp" alt="Imagen 8">
+            <h3>Rivaldo critico</h3>
+            <p>El brasileño, crítico con su exequipo después de la ida de semifinales de Copa ante el Atleti.</p>
+            <a href="https://www.marca.com/futbol/barcelona/2025/02/27/rivaldo-descubre-males-barca.html">Detalles</a>
+        </div>
+    </section>
+    
+    <footer>
+        <p>Desarrollado por: Kevin Rodriguez</p>
+        <p>Redes Sociales: <a href="https://www.facebook.com/?locale=es_LA">Facebook</a> | <a href="https://x.com/?lang=es">Twitter</a> | <a href="https://co.linkedin.com/">LinkedIn</a></p>
+        <p>Derechos Reservados &copy; 2025</p>
+    </footer>
+</body>
+</html>
