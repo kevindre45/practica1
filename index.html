@@ -3,386 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Agency</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Noticias Deportivas </title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
-        
-        body {
-            background-color: #8EADD5;
+        * {
             margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
             font-family: Arial, sans-serif;
         }
-        .nav-links {
-            list-style: none;
-            position: absolute;
-            top: 10px;
-            right: 20px;
-            display: flex;
-            gap: 15px;
+        header {
+            background: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
         }
-        .nav-links li {
-            display: inline;
-        }
-        .nav-links a {
-            text-decoration: none;
-            color: black;
-            font-weight: bold;
-        }
-        .hero {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 50px;
-            position: relative;
-            height: 600px;
-        }
-        .hero-text {
-            position: absolute;
-            top: 213px;
-            left: 188px;
-            width: 540px;
-            height: 192px;
-            text-align: left;
-            border-width: 1px;
-        }
-        .hero-text h1 {
-            font-family: 'Inter', sans-serif;
-            font-weight: 700;
-            font-size: 64px;
-            line-height: 100%;
-            letter-spacing: 0%;
-            text-transform: capitalize;
-            white-space: pre-line;
-            text-align: left;
-        }
-        .hero-image {
-            position: absolute;
-            top: 144px;
-            left: 803px;
-            width: 450px;
-            height: 450px;
+        nav ul {
             display: flex;
             justify-content: center;
-            align-items: center;
+            list-style: none;
         }
-        .hero-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+        nav ul li {
+            margin: 0 15px;
         }
-        .trusted-companies {
-            text-align: center;
-            background-color: #8EADD5;
-            padding: 40px 0;
+        nav ul li a {
+            color: white;
+            text-decoration: none;
         }
-        .trusted-companies p {
-            color:  #CFDCED;
-
-            font-size: 18px;
-            margin-bottom: 20px;
-        }
-        .trusted-companies img {
-            height: 40px;
-            margin: 0 20px;
-        }
-        
-        /* Nueva sección */
-        .services {
-            background-color: #8EADD5;
-            padding: 50px;
-            text-align: center;
-        }
-        .services h2 {
-            color:black;
-            font-size: 32px;
-            margin-bottom: 30px;
-        }
-        .services-container {
+        .container {
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
             gap: 20px;
-            flex-wrap: wrap;
-        }
-        .service-card {
-            background: white;
             padding: 20px;
-            border-radius: 10px;
-            width: 300px;
+        }
+        .card {
+            background: #f4f4f4;
+            padding: 15px;
+            border-radius: 8px;
+            width: 23%;
             text-align: center;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
         }
-        .service-card img {
-            height: 50px;
-            margin-bottom: 15px;
+        .card img {
+            width: 100%;
+            border-radius: 8px;
         }
-        .service-card h3 {
-            font-size: 18px;
-            color: black;
+        .card h3 {
+            margin: 10px 0;
         }
-        .service-card p {
-            font-size: 14px;
-            color: black;
+        .card a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 15px;
+            background: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        @media (max-width: 768px) {
+            .card {
+                width: 100%;
+            }
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
         }
     </style>
 </head>
 <body>
-    <!-- Navbar -->
     <header>
-        <nav class="navbar">
-            <div class="logo">Digital Agency</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#contact">Contact</a></li>
+        <h1>Noticias Deportivas</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Proyectos</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contacto</a></li>
             </ul>
         </nav>
     </header>
-
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-text">
-            <h1>Building digital
-products, brands
-& experience</h1>
-            <p>We work with brands, startups, and SMEs to create impact and growth.</p>
-            <button style="color: white; background-color: #8EADD5;border: none; padding: 10px 20px;">Contact Us</button>
+    
+    <section class="container">
+        <div class="card">
+            <img src="https://www.semana.com/resizer/v2/NTXKLVBQTJF7PPPSUY2MDFCKTY.jpg?auth=42ba3c5b1256addf592e2b96c593048227dd5e1d9df6bc75037af9970a932a56&smart=true&quality=75&width=1280&height=720" alt="Imagen 1">
+            <h3>Sorpresa en sevilla </h3>
+            <p>Real Madrid fue sorprendido este sábado, 1 de marzo, por el Betis del futbolista colombiano Juan Camilo Hernández .</p>
+            <a href="https://www.semana.com/deportes/articulo/real-madrid-sacude-la-tabla-de-posiciones-mazazo-del-betis-en-laliga-beneficia-a-barcelona/202508/">Detalles</a>
         </div>
-        <div class="hero-image">
-            <img src="IMAGENES/business-deal.png" alt="Hero Image">
+        <div class="card">
+            <img src="https://phantom-marca.uecdn.es/bc7c5c29d7984de3c6c1b044cc398a48/resize/1320/f/webp/assets/multimedia/imagenes/2025/02/28/17407785083924.jpg" alt="Imagen 2">
+            <h3>¿se queda?</h3>
+            <p>el revuelo y escándalo que se produjo a nivel local e internacional, llevó a que se hablara de la salida de James Rodríguez.</p>
+            <a href="https://www.marca.com/co/2025/02/28/67c22c8a22601d05418b4593.html">Detalles</a>
         </div>
-    </section>
-
-    <!-- Trusted Companies Section -->
-    <section class="trusted-companies">
-        <p>Trusted By 4,000+ Companies</p>
-        <div>
-            <img src="IMAGENES/Company logo.png" alt="Spotify">
-            <img src="IMAGENES/Company logo-1.png" alt="Slack">
-            <img src="IMAGENES/Company logo-2.png" alt="Dropbox">
-            <img src="IMAGENES/Company logo-3.png" alt="Zoom">
+        <div class="card">
+            <img src="https://e00-xlk-ue-marca.uecdn.es/files/article_1320_widen_webp/uploads/2025/03/01/67c3660f95953.webp" alt="Imagen 3">
+            <h3>El City remonta </h3>
+            <p>Tras el encuentro, Guardiola es optimista con su actuación en la FA Cup.</p>
+            <a href="https://www.marca.com/futbol/futbol-internacional/2025/03/01/city-remonta-pasa-ronda-sufriendo-antepenultimo-segunda-verdugo-liverpool.html">Detalles</a>
         </div>
-    </section>
-
-    <!-- Nueva sección de servicios -->
-    <section class="services">
-        <h2>Branding & Design System</h2>
-        <div class="services-container">
-            <div class="service-card">
-                <img src="IMAGENES/website-4943 1.png" alt="Website Design">
-                <h3>WEBSITE DESIGN</h3>
-                <p>Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s.</p>
-            </div>
-            <div class="service-card">
-                <img src="IMAGENES/LOGO2.png" alt="Web Development">
-                <h3>WEB DEVELOPMENT</h3>
-                <p>Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s.</p>
-            </div>
-            <div class="service-card">
-                <img src="IMAGENES/mobile-phone-1164 1.png" alt="Mobile App Development">
-                <h3>MOBILE APP DEVELOPMENT</h3>
-                <p>Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s.</p>
-            </div>
+        <div class="card">
+            <img src="https://phantom-marca.uecdn.es/6642392f7e7cd9103653e4f9d05c011e/resize/1320/f/webp/assets/multimedia/imagenes/2025/03/01/17408560156709.jpg" alt="Imagen 4">
+            <h3>El Nápoles rescata</h3>
+            <p>El primer tiempo estuvo muy trabado, con más juego duro que fútbol.</p>
+            <a href="https://www.marca.com/futbol/liga-italiana/cronica/2025/03/01/67c34ce2e2704e66bf8b456a.html">Detalles</a>
         </div>
-    </section>
-    <!-- Custom & Plugin Development Section -->
-    <section class="custom-plugin">
-        <div class="custom-container">
-            <div class="custom-text">
-                <h2>Custom & Plugin Development</h2>
-                <p>Commonly used in the graphic, print & publishing industries for previewing visual layout and mockups.</p>
-            </div>
-            <div class="custom-image">
-                <img src="IMAGENES/businessman-analyzing-data-1.png" alt="Custom Plugin Development">
-            </div>
+        <div class="card">
+            <img src="https://phantom-marca.uecdn.es/9088a00cb85f1c80c343b504bee9e4d4/resize/1310/f/webp/assets/multimedia/imagenes/2025/02/22/17402633127172.jpg" alt="Imagen 5">
+            <h3>Mentalidad Barça</h3>
+            <p>Tenemos que estar enfocados, el calendario no es una excusa.</p>
+            <a href="https://www.marca.com/futbol/barcelona/2025/03/01/hansi-flick-enfocados-calendario-excusa.html">Detalles</a>
+        </div>
+        <div class="card">
+            <img src="https://e00-xlk-ue-marca.uecdn.es/files/article_1320_widen_webp/uploads/2025/02/28/67c208e969725.webp" alt="Imagen 6">
+            <h3>Vuelve a Bazil </h3>
+            <p>El Palmeiras pagó 25,5 millones y otros cinco en bonus.</p>
+            <a href="https://www.marca.com/futbol/barcelona/2025/03/01/asi-son-variables-traspaso-vitor-roque.html">Detalles</a>
+        </div>
+        <div class="card">
+            <img src="https://phantom-marca.uecdn.es/12544b3c7ab7bf703463122e5a3b5b78/resize/416/f/webp/assets/multimedia/imagenes/2025/02/28/17407428221103.png" alt="Imagen 7">
+            <h3>Balon de oro 2025</h3>
+            <p>los 10 candidatos según el Power Ranking de MARCA.</p>
+            <a href="https://www.marca.com/futbol/2025/02/28/power-ranking-balon-oro-2025-asi-top-10-favoritos.html">Detalles</a>
+        </div>
+        <div class="card">
+            <img src="https://e00-xlk-ue-marca.uecdn.es/files/article_1320_widen_webp/uploads/2025/02/27/67c080b30d95e.webp" alt="Imagen 8">
+            <h3>Rivaldo critico</h3>
+            <p>El brasileño, crítico con su exequipo después de la ida de semifinales de Copa ante el Atleti.</p>
+            <a href="https://www.marca.com/futbol/barcelona/2025/02/27/rivaldo-descubre-males-barca.html">Detalles</a>
         </div>
     </section>
-
-    <style>
-        .custom-plugin {
-            background-color: #8EADD5;
-            padding: 50px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .custom-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1000px;
-            width: 100%;
-        }
-        .custom-text {
-            width: 50%;
-            color: black;
-            text-align: left;
-        }
-        .custom-text h2 {
-            font-size: 32px;
-            margin-bottom: 15px;
-        }
-        .custom-text p {
-            font-size: 16px;
-            color: gray;
-        }
-        .custom-image {
-            width: 50%;
-            display: flex;
-            justify-content: flex-end;
-        }
-        .custom-image img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
-        }
-    </style>
-<!-- Custom & Plugin Development Section -->
-<section class="custom-plugin">
-    <div class="custom-container">
-        <div class="custom-image">
-            <img src="IMAGENES/customer-support.png" alt="Custom Plugin Development">
-        </div>
-        <div class="custom-text">
-            <h2>Be a part of the next big thing
-                <p>We work with Brans, Startups, to SMEs. Colaborate for more impact and growt
-
-                </p>
-            <button class="custom-button">CONTACT US</button>
-        </div>
-    </div>
-</section>
-
-<style>
-    .custom-plugin {
-        background-color: #8EADD5;
-        padding: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .custom-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        max-width: 1000px;
-        width: 100%;
-    }
-    .custom-text {
-        width: 50%;
-        color: black;
-        text-align: left;
-    }
-    .custom-text h2 {
-        font-size: 32px;
-        margin-bottom: 15px;
-    }
-    .custom-text p {
-        font-size: 16px;
-        color: #272D38;
-        margin-bottom: 10px;
-    }
-    .custom-button {
-        background-color: #8EADD5;
-        color: white;
-        border: none;
-        padding: 10px 20px;
-        font-size: 16px;
-        cursor: pointer;
-    }
-    .custom-image {
-        width: 50%;
-        display: flex;
-        justify-content: flex-start;
-    }
-    .custom-image img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 10px;
-    }
-</style>
-<!-- Footer Section -->
-<footer class="footer">
-    <div class="footer-container">
-        <div class="footer-column">
-            <h3>Digital Agency</h3>
-            <p>Building Digital Products, <br> Brands & Experience</p>
-        </div>
-        <div class="footer-column">
-            <h3>Resources</h3>
-            <ul>
-                <li><a href="#">Guides</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Customer Stories</a></li>
-                <li><a href="#">Glossary</a></li>
-            </ul>
-        </div>
-        <div class="footer-column">
-            <h3>Company</h3>
-            <ul>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Partners</a></li>
-                <li><a href="#">Contact Us</a></li>
-            </ul>
-        </div>
-        <div class="footer-column">
-            <h3>Social Media</h3>
-            <ul>
-                <li><a href="https://co.linkedin.com/">LinkedIn</a></li>
-                <li><a href="https://www.facebook.com/?locale=es_LA">Facebook</a></li>
-                <li><a href="https://www.instagram.com/">Instagram</a></li>
-                <li><a href="https://x.com/?lang=es">Twitter</a></li>
-            </ul>
-        </div>
-    </div>
-</footer>
-
-<style>
-    .footer {
-        background-color: #8EADD5;
-        padding: 40px;
-        text-align: left;
-    }
-    .footer-container {
-        display: flex;
-        justify-content: space-between;
-        max-width: 1000px;
-        margin: 0 auto;
-    }
-    .footer-column {
-        width: 22%;
-    }
-    .footer-column h3 {
-        font-size: 18px;
-        color: black;
-        margin-bottom: 10px;
-    }
-    .footer-column p {
-        color:#272D38;
-
-        font-size: 14px;
-    }
-    .footer-column ul {
-        list-style: none;
-        padding: 0;
-    }
-    .footer-column ul li {
-        margin-bottom: 8px;
-    }
-    .footer-column ul li a {
-        text-decoration: none;
-        color:  #272D38;
-
-        font-size: 14px;
-    }
-</style>
-
-
-    <!-- Footer -->
+    
     <footer>
-        <p>© 2025 Digital Agency. All rights reserved.</p>
+        <p>Desarrollado por: Kevin Rodriguez</p>
+        <p>Redes Sociales: <a href="https://www.facebook.com/?locale=es_LA">Facebook</a> | <a href="https://x.com/?lang=es">Twitter</a> | <a href="https://co.linkedin.com/">LinkedIn</a></p>
+        <p>Derechos Reservados &copy; 2025</p>
     </footer>
 </body>
 </html>
